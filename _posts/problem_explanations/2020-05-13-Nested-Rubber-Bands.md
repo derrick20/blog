@@ -5,7 +5,7 @@ date:   2020-05-13 19:54:25 -0400
 categories: trees dp
 permalink: /:categories
 ---
-<script src="/js/mermaid.min.js"></script>
+<script src="/blog/js/mermaid.min.js"></script>
 
 The other day I came across a [neat problem](https://codeforces.com/contest/1338/problem/D) on the Codeforces round 633 div. 1. Go check out the problem statement and try thinking about it on your own!
 
@@ -96,16 +96,16 @@ In case this still isn't clear, here's a rought drawing of the three cases I jus
 
 Inside Case: Blue, and any number of black can go between the outside blue and inside green, sandwiched between.
 
-<img src="/assets/Nested-Rubber-Bands-Diagrams/InsideCase.png" width="40%"/>
+<img src="/blog/assets/Nested-Rubber-Bands-Diagrams/InsideCase.png" width="40%"/>
 
 Outside Case: Red, and any number of black can go outside green and inside red, sandwiched between.
 
-<img src="/assets/Nested-Rubber-Bands-Diagrams/OutsideCase.png" width="40%"/>
+<img src="/blog/assets/Nested-Rubber-Bands-Diagrams/OutsideCase.png" width="40%"/>
 
 
 Combined Case: Notice that we cannot rely on more branches similar to the red and blue ones, because topologically, there are only two spaces: inside and outside. We physically cannot fit anything else!
 
-<img src="/assets/Nested-Rubber-Bands-Diagrams/CombinedCase.png" width="40%"/>
+<img src="/blog/assets/Nested-Rubber-Bands-Diagrams/CombinedCase.png" width="40%"/>
 
 Below is the bulk of the code for the problem. We call the solve function on any arbitrary node and we will update `best` to be the maximum nesting depth possible.
 
