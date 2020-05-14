@@ -22,7 +22,7 @@ title: Derrick Liang
 email: derrick8@mit.edu
 description: >- # this means to ignore newlines until "baseurl:"
   This website will contain different projects I work on and explanations of interesting problems I've solved.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/derrick20" # the subpath of your site, e.g. /blog
 url: "derrick20" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  derrick20
 
